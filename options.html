@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+        <title>Nym Socks5 Chrome</title>
+        <script src="weightless.min.js"></script>
+    </head>
+    <body>
+        <div class="container30"></div>
+        <div class="center">
+            <wl-card class="column ">
+                <img src="images/Nym-Logo+token-dark.svg"  >
+                
+              
+            </wl-card>
+        </div>
+        <div class="container30"></div>
+        <div class="center">
+            <wl-card class="column">
+                <div class="row">
+                   <p> NYM Socks5 Proxy</p>
+                    <wl-switch checked id="socks5switch"></wl-switch>
+                </div>
+                <div class="container20"></div>
+                <wl-textfield id="socks5server" label="Example: 127.0.0.1:1080 or [::1]:1080"></wl-textfield>
+                <div class="container20"></div>
+            </wl-card>
+        </div>
+        <div class="container30"></div>
+        <div  style="display: none;" class="center">
+            <wl-card class="column">
+                <div class="row">
+                    <wl-title level="3">Bypass List</wl-title>
+                    <wl-switch checked id="bypassswitch"></wl-switch>
+                </div>
+                <div class="container20"></div>
+                <wl-textfield label="Domain list, example: https://txthinking.github.io/bypass/china_domain.txt" id="bypassdomainurl"></wl-textfield>
+                <div class="container20"></div>
+                <wl-textfield label="CIDR4 list, example: https://txthinking.github.io/bypass/china_cidr4.txt" id="bypasscidr4url"></wl-textfield>
+                <div class="container20"></div>
+                <wl-textfield label="CIDR6 list, example: https://txthinking.github.io/bypass/china_cidr6.txt" id="bypasscidr6url"></wl-textfield>
+                <div class="container20"></div>
+            </wl-card>
+        </div>
+        <div class="container30"></div>
+        <div style="display: none;" class="center">
+            <wl-card class="column hey">
+                <wl-title level="3" id="shiliew"></wl-title>
+                <wl-title level="3" id="shiliewzh"></wl-title>
+            </wl-card>
+        </div>
+        <div class="container30"></div>
+        <div class="center ">
+            <wl-button class="button" id="save">Save</wl-button>
+            <wl-button id="ing"><wl-progress-spinner></wl-progress-spinner></wl-button>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <wl-button flat inverted><a href="https://www.criptochingaderas.com">criptochingaderas</a></wl-button>
+                <wl-text></wl-text>
+            </div>
+        </div>
+        <script src="options.js"></script>
+    </body>
+</html>
